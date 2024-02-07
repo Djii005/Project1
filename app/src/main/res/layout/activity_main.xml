@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtlog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="30dp"
+        android:text="Login Page"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/txtnama"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan nama anda"
+        android:layout_centerHorizontal="true"
+        android:inputType="text"
+        android:layout_below="@id/txtlog"/>
+
+    <EditText
+        android:id="@+id/txtpass"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtnama"
+        android:inputType="numberPassword"
+        android:hint="Enter your pass"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/adji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:layout_below="@id/txtpass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <CheckBox
+        android:id="@+id/catbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cat"
+        android:layout_below="@id/adji"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <CheckBox
+        android:id="@+id/dogbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dog"
+        android:layout_toLeftOf="@id/catbox"
+        android:layout_below="@id/adji"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkbox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seal"
+        android:layout_below="@id/adji"
+        android:layout_toRightOf="@id/catbox"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
